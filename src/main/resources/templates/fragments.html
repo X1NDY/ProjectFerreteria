@@ -32,7 +32,10 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" th:href="@{/producto/lista}">
                             <i class="far fa-list-alt"></i> Listar Producto</a>
+                        <a class="dropdown-item" th:href="@{/inventario/lista}">
+                            <i class="far fa-list-alt"></i> Listar Inventario</a>
                     </div>
+
                 </li>
                 <li class="nav-item dropdown active" sec:authorize="hasRole('ROLE_ADMIN')">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -48,6 +51,8 @@
                             <i class="far fa-list-alt"></i> Actualizar Producto</a>
                         <a class="dropdown-item" th:href="@{/producto/lista}">
                             <i class="far fa-list-alt"></i> Listar Producto</a>
+                        <a class="dropdown-item" th:href="@{/inventario/lista}">
+                            <i class="far fa-list-alt"></i> Listar inventario</a>
                     </div>
                 </li>
             </ul>
